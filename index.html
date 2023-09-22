@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Borahae - Inicio</title>
+
+    <!-- Bootstrap Icons CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="grilla">
+      <!-- encabezados -->
+      <header class="header">
+        <a href="index.html">
+          <!--Link en la image-->
+          <img class="logo" src="../imagenes/logo.png" alt="" />
+        </a>
+        <!-- Menu de Navegacion -->
+        <nav>
+          <!-- Lista Desordenada -->
+          <ul class="menu">
+            <!-- list items -->
+            <li class="list-item">
+              <!-- links -->
+              <a class="menu-item-list" href="./borahae/inicio.html">Inicio</a>
+            </li>
+
+            <li class="list-item">
+              <a class="menu-item-list" href="./borahae/nosotros.html"
+                >Nosotros</a
+              >
+            </li>
+            <li class="list-item">
+              <a class="menu-item-list" href="./borahae/servicios.html"
+                >Servicios</a
+              >
+            </li>
+
+            <li class="list-item">
+              <a class="menu-item-list" href="./borahae/Galeria.html"
+                >Galeria</a
+              >
+            </li>
+            <li class="list-item">
+              <a class="menu-item-list" href="#contacto">Contactos</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- banner -->
+      <main class="banner-color banner" id="banner">
+        <div class="color parallax">
+          <!-- <img src="" alt="" /> -->
+          <span class="text-color-banner"
+            >Imagina tu boda.Elegi el mejor lugar</span
+          >
+        </div>
+      </main>
+      <!-- section -->
+      <div id="section" class="div-one">
+        <section class="div-one-section">
+          <span class="section-one"
+            >Es un lugar único donde se combina calidez, naturaleza y
+            profesionalismo.</span
+          >
+          <video width="560" height="315" controls muted poster="./imagenes/galeria4.jpg" preload="metadata" src="./videos/home.mp4"></video>
+
+        </section>
+      </div>
+      <section id="section-two" class="section-two parallax-two">
+        <!-- <img class="small-two" src="imagenes/home3.jpg" alt="" /> -->
+      </section>
+
+      <!-- contactos -->
+      <section id="contacto" class="contacto">
+        <div class="div-contacto">
+          <h2 class="tex-contacto">Contactos</h2>
+          <ul class="div-contacto-items">
+            <li>Jose Martin 1685,Caba, Argentina</li>
+            <li>1123898981</li>
+            <li>Borahae@gmail.com</li>
+          </ul>
+        </div>
+        <!-- formulario -->
+        <!--form action es donde vamos a guardar o enviar algun lado es decir que se guarde la info de la web method es como mandamos informacion web a nuestroa rchivo/ POST SE ENVIARA DE MANERA INVISIBLE-->
+        <br />
+        <div class="div-consulta">
+          <h2>Dejanos tu consulta</h2>
+          <form class="div-consulta-form" action="form-php" method="POST">
+            <!--Label es como el titulo del input
+  Es el texto visible para los usuarios -->
+            <label for="" class="div-one"></label>
+            <input
+              class="inputs-form"
+              type="text"
+              required
+              name="nombre"
+              id="nombre"
+              placeholder="Nombre y Apellido"
+            />
+
+            <label for="" class="div-one"></label>
+            <br />
+            <input
+              class="inputs-form"
+              type="email"
+              placeholder="Email"
+              required
+              name=""
+              id=""
+            />
+
+            <label for="" class="div-one"></label>
+            <br />
+            <input
+              class="inputs-form"
+              class="inputs-form"
+              type="number"
+              placeholder="Numero telefonico"
+              name=""
+              required
+              id=""
+            />
+
+            <!--Tex Area lo que genera usuario escriba lo que quiera-->
+            <br /><textarea
+              class=".div-one"
+              name=""
+              placeholder="Escriba tu mensaje aqui"
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+            <br />
+            <button class="inputs-form botom" type="submit">Enviar</button
+            ><br />
+            <br />
+          </form>
+        </div>
+      </section>
+      <aside id="aside">
+        <img class="aside-one" src="imagenes/home2.jpg" alt="" />
+      </aside>
+
+      <!-- pie de pagina -->
+      <div id="footer-one">
+        <!-- Redes sociales -->
+        <div class="footer-redes">
+          <h4>Deslumbrá a tus invitados desde su llegada</h4>
+
+          <ul class="list-two">
+            <li class="list-two-one">
+              <a
+                class="list-two-color"
+                href="https://es-la.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-facebook"></i> Facebook
+              </a>
+            </li>
+            <li class="list-two-one">
+              <a
+                class="list-two-color"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-instagram"></i> Instagram</a
+              >
+            </li>
+            <li class="list-two-one">
+              <a
+                class="list-two-color"
+                href="https://twitter.com/?lang=es"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-twitter"></i> Twitter</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-two">
+          <a class="footer-icons" href="#banner"
+            ><i class="bi bi-chevron-up"></i
+          ></a>
+          <a class="footer-two-color" href="#banner">Volver arriba</a>
+          <h3>Hecho por Paola Rosales</h3>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

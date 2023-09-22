@@ -1,0 +1,446 @@
+/* EXISTEN 3 FORMAS PARA AGG STYLE 
+1-LINEA DE STYLE:dentro de un elemento de boddy en apertura
+2-BLOQUE DE HEAD:dentro de head se puede llamar a un alemento y aplicar estilo a todos ellos
+3-ARCHIVO DE CSS: es mas recomendable ya que se puede expandir y se puede mantener*/
+
+html body {
+  font-size: 68%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(0, 0, 0);
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  height: 100%;
+}
+#grilla {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(9, auto);
+  grid-template-areas:
+    "header header"
+    "banner banner"
+    "section1 section1 "
+    "section1 section1 "
+    "section2 section2 "
+    "section2 section2 "
+    "contacto section3 "
+    "footer footer"
+    "footer1 footer1 ";
+  /* height: 100vh; */
+}
+
+header {
+  grid-area: header;
+}
+
+#banner {
+  grid-area: banner;
+}
+#section {
+  grid-area: section1;
+}
+#section-two {
+  grid-area: section2;
+}
+
+#contacto {
+  grid-area: contacto;
+}
+
+#aside {
+  grid-area: section3;
+}
+#footer-one {
+  grid-area: footer;
+}
+
+footer {
+  grid-area: footer1;
+}
+
+/* QUEDA PENDIENTE EN MEJORAR LA SEPARACION DEL LOGO Y NAV */
+.header {
+  display: flex; /*alineando los elementos*/
+  /* justify-content: center; alineacion horizontal mas centrado */
+  align-items: center; /*alineacion vertical*/
+  /* gap: 30rem;separando el logo y menu */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: sticky;
+    top: 0px;
+    background-color:black;
+    z-index: 1;
+}
+.logo {
+  /* acomodar tamaño del logo */
+  width: 150px;
+  height: 100px;
+  
+}
+
+/*Menu de Navegacion*/
+/* sacamos las viñetas */
+
+.menu {
+  display: flex;
+  flex-wrap: wrap; /* ver porque no se acomoda */
+  width: 500px; /*se aplica esto primero para que tenga un ancho y poder separarlos*/
+  justify-content: space-around; /* separando los items*/
+  margin-right: 6rem;
+  padding: 0;
+  margin-top: 0;
+  align-items: center;
+  /* TRANSICION */
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes bounceIn {
+  0%, 20%, 40%, 60%, 80%, 100% {
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  20% {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+  -webkit-transform: scale3d(.9, .9, .9);
+  transform: scale3d(.9, .9, .9);
+  }
+  60% {
+  opacity: 1;
+  -webkit-transform: scale3d(1.03, 1.03, 1.03);
+  transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+  -webkit-transform: scale3d(.97, .97, .97);
+  transform: scale3d(.97, .97, .97);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  }
+  @keyframes bounceIn {
+  0%, 20%, 40%, 60%, 80%, 100% {
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  20% {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+  -webkit-transform: scale3d(.9, .9, .9);
+  transform: scale3d(.9, .9, .9);
+  }
+  60% {
+  opacity: 1;
+  -webkit-transform: scale3d(1.03, 1.03, 1.03);
+  transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+  -webkit-transform: scale3d(.97, .97, .97);
+  transform: scale3d(.97, .97, .97);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+.list-item {
+  color: rgb(253, 250, 250);
+  font-family: 'Merriweather', serif;
+  font-size: 1.2rem;
+}
+.menu-item-list {
+  display: flex;
+  flex-wrap: wrap; /* ver porque no se acomoda */
+  font-weight: bold;
+  /* efecto */
+  border-bottom: 2px solid black;
+  transition: all 0.5s ease;
+  color: aliceblue;
+}
+/* sacamos por defecto los estilos de link  */
+a {
+  /* quitar el subrayado */
+  text-decoration: none;
+}
+.menu-item-list:hover {
+  border-color: rgb(148, 0, 246);
+}
+
+/* banner */
+/* main div img {
+  /* efecto parallax */
+ 
+  /* } */ 
+.parallax{
+  background-image: url("../imagenes/home (1).jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  width: 100%;
+  height: 80vh;
+  border-bottom: 5px purple ridge;
+  object-fit: cover;
+}
+/* SECTION 2 */
+.parallax-two{
+  background-image: url("../imagenes/home3.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+
+.color {
+
+  background-color: rgb(240, 255, 247);
+
+}
+.text-color-banner{
+  color: #fff3f3;
+    position: absolute;
+    bottom: 150px;
+    left: 15px;;
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: #00000078;
+    padding: 10px;
+  
+}
+
+/* section one */
+#section {
+  display: flex;
+  flex-wrap: wrap; /* ver porque no se acomoda */
+  flex-direction: column; /* ver porque no se acomoda */
+}
+.div-one {
+  background-color: rgb(240, 255, 247);
+}
+.div-one-section {
+  display: flex;
+  margin: 2rem 2rem;
+  gap: 1rem;
+}
+.section-one {
+  color: black;
+  font-size: 25px;
+  font-family: "Kaushan Script", cursive;
+  align-self: center;
+}
+
+.iframe-one {
+  margin-left: 1.4rem;
+}
+
+/* CONTACTOS */
+.contacto {
+  display: flex;
+  color: aliceblue;
+  gap: 100px;
+  margin-top: 35px;
+  border-bottom: 3px dotted pink;
+}
+.div-contacto {
+  display: flex;
+  flex-direction: column;
+}
+
+.tex-contacto {
+  display: flex;
+  color: aliceblue;
+  flex-direction: column;
+  margin-left: 2rem;
+  align-self: center;
+}
+.div-contacto-items {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+/* Formulario */
+.div-consulta {
+  display: flex;
+  flex-direction: column;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.inputs-form {
+  height: 35px;
+}
+.botom{
+  background-color: pink;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+
+}
+.botom:hover{
+  background-color: purple;
+}
+.custom-button:hover {
+}
+/* ASIDE */
+#aside{
+  border-bottom: 3px dotted pink;
+}
+.aside-one {
+  width: 90%;
+  height: 100%;
+  margin-left: 80px;
+  object-fit: cover;
+  
+}
+/* Pie de pagina */
+h4 {
+  color: aliceblue;
+  font-size: 20px;
+}
+
+/* Redes Sociales */
+.list-two {
+  display: flex;
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  gap: 2rem;
+}
+
+.footer-one{
+  display: flex;
+  justify-content: center;
+}
+.footer-redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 80px;
+  gap: 1rem;
+  /* TRANSICION */
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes zoomIn {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  50% {
+  opacity: 1;
+  }
+  }
+  @keyframes zoomIn {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  50% {
+  opacity: 1;
+  }
+}
+.list-two-color {
+  color: white;
+}
+footer {
+  color: black;
+  font-family: "Philosopher", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 5px groove purple;
+  background-color: white;
+}
+
+.footer-two {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+  color: black;
+
+}
+
+.footer-two-color {
+  color: black;
+  font-size: 15px;
+  align-self: center;
+  font-weight: bold;
+  border-bottom: 2px solid white;
+  transition: all 0.5s ease;
+  margin-top: 5px;
+}
+.footer-icons{
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 45px;
+
+}
+
+.footer-two-color:hover {
+  border-color: purple;
+}
+
+h3 {
+  display: flex;
+  align-self: center;
+}
+
+/* NOSOTROS */
+.parallax-nosotros{
+  background-image: url("../imagenes/Nosotros.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  width: 100%;
+  height: 80vh;
+  border-bottom: 5px purple ridge;
+  object-fit: cover;
+}
