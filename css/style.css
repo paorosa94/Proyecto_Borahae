@@ -3,7 +3,7 @@
 2-BLOQUE DE HEAD:dentro de head se puede llamar a un alemento y aplicar estilo a todos ellos
 3-ARCHIVO DE CSS: es mas recomendable ya que se puede expandir y se puede mantener*/
 
-@media only screen and (min-width:0px){
+@media only screen and (min-width: 0px) {
   /* nosotros */
   .text-color-nosotros {
     display: flex;
@@ -22,11 +22,20 @@
     margin: 0;
     padding: 50px;
   }
-
+  .carousel-inner {
+    display: flex;
+    justify-content: space-around;
+  }
+  /* botom */
+  .carousel-control-prev {
+    left: 120px;
+  }
+  .carousel-control-next {
+    right: 125px;
+  }
 }
 
-
-@media only screen and (min-width:576px){
+@media only screen and (min-width: 576px) {
   /* nosotros */
   .text-color-nosotros {
     display: flex;
@@ -45,11 +54,20 @@
     margin: 0;
     padding: 50px;
   }
-
+  .carousel-inner {
+    display: flex;
+    justify-content: space-around;
+  }
+  /* botom */
+  .carousel-control-prev {
+    left: 120px;
+  }
+  .carousel-control-next {
+    right: 125px;
+  }
 }
 
-
-@media only screen and (min-width:768px) {
+@media only screen and (min-width: 768px) {
   /* nosotros */
   .text-color-nosotros {
     display: flex;
@@ -60,7 +78,6 @@
     left: 380px;
     font-weight: bold;
     font-size: 4rem;
-
   }
   .margin-nosotros {
     margin: 0;
@@ -70,10 +87,21 @@
     padding: 50px;
   }
 
+  /* carousel */
+  .carousel-inner {
+    display: flex;
+    justify-content: space-around;
+  }
+  /* botom */
+  .carousel-control-prev {
+    left: 140px;
+  }
+  .carousel-control-next {
+    right: 140px;
+  }
 }
 
-
-@media only screen and (min-width:992px) and (max-width:3400px){
+@media only screen and (min-width: 992px) and (max-width: 3400px) {
   /* nosotros */
   .text-color-nosotros {
     display: flex;
@@ -92,10 +120,19 @@
     margin: 0;
     padding: 50px;
   }
-
+  /* carousel */
+  .carousel-inner {
+    display: flex;
+    justify-content: space-around;
+  }
+  /* botom */
+  .carousel-control-prev {
+    left: 230px;
+  }
+  .carousel-control-next {
+    right: 230px;
+  }
 }
-
-
 
 html body {
   font-size: 68%;
@@ -304,7 +341,7 @@ a {
 
 /* } */
 .parallax {
-  background-image: url("../imagenes/home (1).jpg");
+  background-image: url("../imagenes/image\ \(4\).png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -348,7 +385,7 @@ a {
   flex-direction: column; /* ver porque no se acomoda */
 }
 .div-one {
-  background-color: rgb(240, 255, 247);
+  background-color: white;
 }
 .div-one-section {
   display: flex;
@@ -497,7 +534,6 @@ footer {
   display: flex;
   flex-direction: column;
   margin-right: 4rem;
-  color: black;
 }
 
 .footer-two-color {
@@ -527,37 +563,34 @@ h3 {
 
 /* NOSOTROS */
 
-#grilla-nosotros{
+#grilla-nosotros {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(9, auto);
+  grid-template-rows: repeat(7, auto);
   grid-template-areas:
     "header header"
     "banner banner"
-    "section1 section1 "
-    "section1 section1 "
+    "section1 section1"
     "section2 section2 "
-    "section3 section3 "
-    "footer footer"
-    "footer footer"
-    "footer1 footer1 ";  
+    "section2 section2 "
+    "section3 section3"
+    "footer1 footer1 ";
 }
 
-
-#section-nosotros{
-  grid-area:section1
+#section-nosotros {
+  grid-area: section1;
 }
 
-#section2-nosotros{
-  grid-area:section2
+#section2-nosotros {
+  grid-area: section2;
 }
 
-#section3-nosotros{
+#carouselExampleInterval {
   grid-area: section3;
 }
 /* banner */
 .parallax-nosotros {
-  background-image: url("../imagenes/Nosotros.jpg");
+  background-image: url("../imagenes/nosotros.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -569,21 +602,68 @@ h3 {
   object-fit: cover;
 }
 
-
 /* section2 */
-.border-nosotros{
+.border-nosotros {
   border-bottom: purple solid 2px;
-
 }
-.color-nosotros{
-  background-color: white;
-}
-
-.text-nosotros{
-  color: black;
+.color-nosotros {
+  background-color: black;
+  border-bottom: 2px solid purple;
 }
 
+.text-nosotros {
+  color: white;
+}
+.carousel {
+  margin: 10px;
+}
+.form-nosotros {
+  color: white;
+}
+/* footer */
+
+.nosotros-tamano {
+  font-size: 1.17em;
+  font-weight: bold;
+}
 /* Servicios */
+.parallax-galeria {
+  background-image: url("../imagenes/galeria11.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  width: 100%;
+  height: 80vh;
+  border-bottom: 5px purple ridge;
+  object-fit: cover;
+}
+#grilla-servicios {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas:
+    "header header"
+    "banner banner"
+    "articulo1 articulo1"
+    "articulo2 articulo2 "
+    "articulo2 articulo2 "
+    "footer1 footer1 ";
+}
+
+#section-servicios {
+  grid-area: articulo1;
+}
+
+#section2-servicios {
+  grid-area: articulo2;
+}
+
+#section3-servicios {
+  grid-area: articulo3;
+}
+
 /* banner */
 .parallax-servicios {
   background-image: url("../imagenes/ServiciosP.jpg");
@@ -596,4 +676,22 @@ h3 {
   height: 80vh;
   border-bottom: 5px purple ridge;
   object-fit: cover;
+}
+.tex-col-servicios {
+  color: white;
+}
+#grilla-galeria {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas:
+    "header header"
+    "banner banner"
+    "galeria galeria"
+    "galeria galeria"
+    "galeria galeria"
+    "footer1 footer1 ";
+}
+#galeria{
+  grid-area: galeria;
 }
