@@ -3,17 +3,42 @@
 2-BLOQUE DE HEAD:dentro de head se puede llamar a un alemento y aplicar estilo a todos ellos
 3-ARCHIVO DE CSS: es mas recomendable ya que se puede expandir y se puede mantener*/
 
-@media only screen and (min-width: 0px) {
-  /* home */
-  .md-style{
-    flex-direction: column;
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 0.8rem;
+}
+h6 {
+  font-size: 0.6rem;
+}
 
+.sticky {
+  position: sticky;
+}
+.section-white {
+  background-color: #fff;
+}
+@media only screen and (max-width: 0px) {
+  /* home */
+  .md-style {
+    flex-direction: column;
   }
-  .text-color-banner{
+
+  .text-color-banner {
     font-size: 1rem;
     bottom: -35px;
   }
-  .section-one{
+  .section-one {
     font-size: 15px;
     margin-right: 8rem;
   }
@@ -23,24 +48,24 @@
     gap: 1rem;
     flex-direction: column;
   }
-  .md-items{
-    align-items: center
+  .md-items {
+    align-items: center;
   }
-  .aside-none{
+  .aside-none {
     display: none;
   }
-  .tex-footer{
+  .tex-footer {
     font-size: 1rem;
     align-self: center;
     margin-left: 25px;
     margin-top: 30px;
-}
+  }
   /* nosotros */
-  .logo-style{
+  .logo-style {
     align-self: baseline;
     margin-left: 5rem;
   }
-  .flex-direction{
+  .flex-direction {
     flex-direction: column;
   }
   .text-color-nosotros {
@@ -57,12 +82,12 @@
   .text-nosotros {
     font-size: 1.5rem;
   }
-  .section-style{
+  .section-style {
     display: flex;
-      justify-content: center;
-      padding: 4rem;
-  flex-direction:column ;
-  font-size: 1rem;
+    justify-content: center;
+    padding: 4rem;
+    flex-direction: column;
+    font-size: 1rem;
   }
   .margin-nosotros {
     margin: 0;
@@ -83,17 +108,19 @@
     right: 50px;
   }
 }
-@media only screen and (min-width: 600px) {
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
   /* home */
-.md-style{
-  flex-direction: column;
-}
-  
-  .text-color-banner{
+  .md-style {
+    flex-direction: column;
+  }
+
+  .text-color-banner {
     font-size: 1.5rem;
     bottom: -35px;
   }
-  .section-one{
+  .section-one {
     font-size: 1rem;
     margin-right: 5rem;
   }
@@ -104,20 +131,20 @@
     flex-direction: column;
   }
   /* formulario */
-  .md-items{
-    align-items: center
+  .md-items {
+    align-items: center;
   }
-  .aside-none{
+  .aside-none {
     display: none;
   }
-  .tex-footer{
+  .tex-footer {
     font-size: 1.5rem;
     align-self: center;
     margin-left: 25px;
     margin-top: 30px;
   }
   /* nosotros */
-  .flex-direction{
+  .flex-direction {
     flex-direction: initial;
   }
   .text-color-nosotros {
@@ -133,12 +160,12 @@
   .text-nosotros {
     font-size: 2rem;
   }
-  .section-style{
+  .section-style {
     display: flex;
-      justify-content: center;
-      padding: 4rem;
-  flex-direction:column ;
-  font-size: 1rem;
+    justify-content: center;
+    padding: 4rem;
+    flex-direction: column;
+    font-size: 1rem;
   }
   .margin-nosotros {
     margin: 0;
@@ -160,17 +187,16 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
-  /* home */
-  .md-style{
-    position: sticky;
-    flex-direction: initial;
+@media only screen and (max-width: 768px) {
+  .sticky {
+    position: relative;
   }
-  .text-color-banner{
+  /* home */
+  .text-color-banner {
     font-size: 2rem;
     bottom: 150px;
   }
-  .section-one{
+  .section-one {
     font-size: 1.5rem;
   }
   .div-one-section {
@@ -178,14 +204,20 @@
     margin: 2rem 2rem;
     gap: 1rem;
   }
-  .gap-home{
+  /* formulario */
+  .contacto-grid {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: repeat(2, auto);
+  }
+  .gap-home {
     gap: 100px;
   }
-  .aside-none{
-    display:flex;
+  .aside-none {
+    display: flex;
   }
   /* nosotros */
-  .flex-direction{
+  .flex-direction {
     flex-direction: initial;
   }
   .text-color-nosotros {
@@ -201,13 +233,13 @@
   .text-nosotros {
     font-size: 2rem;
   }
-  .section-style{
+  .section-style {
     display: flex;
-      justify-content: center;
-      padding: 4rem;
-      gap: 300px;
-      flex-direction: initial;
-      font-size: 1rem;
+    justify-content: center;
+    padding: 4rem;
+    gap: 300px;
+    flex-direction: initial;
+    font-size: 1rem;
   }
   .margin-nosotros {
     margin: 0;
@@ -231,17 +263,13 @@
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 3400px) {
+@media only screen and (max-width: 1200px) {
   /* home */
-  .md-style{
-    position: sticky;
-    flex-direction: initial;
-    }
-  .text-color-banner{
+  .text-color-banner {
     font-size: 3rem;
     bottom: 150px;
   }
-  .section-one{
+  .section-one {
     font-size: 2rem;
   }
   .div-one-section {
@@ -250,13 +278,13 @@
     gap: 1rem;
     flex-direction: initial;
   }
-  .gap-home{
+  .gap-home {
     gap: 100px;
   }
-  .aside-none{
-    display:flex;
+  .aside-none {
+    display: flex;
   }
-  .align-items{
+  .align-items {
     align-items: initial;
   }
   /* nosotros */
@@ -273,13 +301,13 @@
   .text-nosotros {
     font-size: 2rem;
   }
-  .section-style{
+  .section-style {
     display: flex;
-      justify-content: center;
-      padding: 4rem;
-      gap: 300px;
-      flex-direction: initial;
-      font-size: 1rem;
+    justify-content: center;
+    padding: 4rem;
+    gap: 300px;
+    flex-direction: initial;
+    font-size: 1rem;
   }
   .margin-nosotros {
     margin: 0;
@@ -383,7 +411,7 @@ footer {
   display: flex;
   flex-wrap: wrap; /* ver porque no se acomoda */
   /* width: 500px; se aplica esto primero para que tenga un ancho y poder separarlos */
-  gap:1.5rem;
+  gap: 1.5rem;
   justify-content: space-around; /* separando los items*/
   margin-right: 6rem;
   padding: 0;
@@ -518,7 +546,7 @@ a {
   border-bottom: 5px purple ridge;
   object-fit: cover;
 }
-video{
+video {
   width: 50%;
 }
 /* SECTION 2 */
@@ -709,11 +737,6 @@ footer {
   border-color: purple;
 }
 
-h3 {
-  display: flex;
-  align-self: center;
-}
-
 /* NOSOTROS */
 
 #grilla-nosotros {
@@ -770,15 +793,14 @@ h3 {
 .carousel {
   margin: 10px;
 }
-.style-nosotros{
+.style-nosotros {
   display: flex;
   justify-content: center;
 }
 
 .form-nosotros {
   color: white;
-    gap: 10px;
-
+  gap: 10px;
 }
 /* footer */
 
@@ -803,28 +825,28 @@ h3 {
 #section-servicios {
   grid-area: articulo1;
   display: flex;
-    flex-direction: initial;
-    color: white;
-    gap: 20px;
-    font-size: 1rem;
+  flex-direction: initial;
+  color: white;
+  gap: 20px;
+  font-size: 1rem;
 }
 
 #section2-servicios {
   grid-area: articulo2;
   display: flex;
   flex-direction: row-reverse;
-    color: white;
-    gap: 20px;
-    font-size: 1rem;
+  color: white;
+  gap: 20px;
+  font-size: 1rem;
 }
 
 #section3-servicios {
   grid-area: articulo3;
   display: flex;
-    flex-direction: initial;
-    color: white;
-    gap: 20px;
-    font-size: 1rem;
+  flex-direction: initial;
+  color: white;
+  gap: 20px;
+  font-size: 1rem;
 }
 
 /* banner */
@@ -843,81 +865,77 @@ h3 {
 .tex-col-servicios {
   color: white;
 }
-.gap-margin-px{
+.gap-margin-px {
   gap: 40px;
   margin-bottom: 20px;
-    margin-top: 50px;
-}
-/* section */
-.servicios-align{
-  display: flex;
-  align-self: center;
+  margin-top: 50px;
 }
 
+
 /* section2 */
-.div-flex-servicios{
+.div-flex-servicios {
   display: flex;
-    flex-direction: initial;
+  flex-direction: initial;
   gap: 20px;
 }
-.slide-left{
+.slide-left {
   -webkit-animation-name: slideInLeft;
   animation-name: slideInLeft;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  }
-  @-webkit-keyframes slideInLeft {
+}
+@-webkit-keyframes slideInLeft {
   0% {
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-  visibility: visible;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
   }
   100% {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  }
-  }
-  @keyframes slideInLeft {
-  0% {
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-  visibility: visible;
-  }
-  100% {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }
-.slide-rigth{
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+.slide-rigth {
   -webkit-animation-name: slideInRight;
   animation-name: slideInRight;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  }
-  @-webkit-keyframes slideInRight {
+}
+@-webkit-keyframes slideInRight {
   0% {
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-  visibility: visible;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    visibility: visible;
   }
   100% {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
-  }
-  @keyframes slideInRight {
+}
+@keyframes slideInRight {
   0% {
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-  visibility: visible;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    visibility: visible;
   }
   100% {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }
 /* GALERIA */
@@ -947,6 +965,23 @@ h3 {
     "galeria galeria"
     "footer1 footer1 ";
 }
-#galeria{
+#galeria {
   grid-area: galeria;
+}
+.banner-styles {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: absolute;
+  bottom: 300px;
+  left: 520px;
+}
+.font-size{
+  font-size: 3rem;
+  background-color: #00000078;
+  font-weight: bold;
+}
+.font-size-background{
+  font-size: 2rem;
+  background-color: #00000078
 }

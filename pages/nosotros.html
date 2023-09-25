@@ -3,9 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../css/style.css" />
-    
+
     <!-- Bootstrap Icons CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
@@ -17,7 +22,7 @@
     <!-- encabezados -->
     <div id="grilla-nosotros">
       <!-- encabezados -->
-      <header class="header flex-direction">
+      <header class="header sticky flex-direction">
         <a class="logo-style" href="../index.html">
           <!--Link en la image-->
           <img class="logo" src="../imagenes/logo.png" alt="" />
@@ -29,7 +34,7 @@
             <!-- list items -->
             <li class="list-item">
               <!-- links -->
-              <a class="menu-item-list" href="inicio.html">Inicio</a>
+              <a class="menu-item-list" href="../index.html">Inicio</a>
             </li>
 
             <li class="list-item">
@@ -43,7 +48,7 @@
               <a class="menu-item-list" href="Galeria.html">Galeria</a>
             </li>
             <li class="list-item">
-              <a class="menu-item-list" href="inicio.html#contacto"
+              <a class="menu-item-list" href="../index.html#contacto"
                 >Contactos</a
               >
             </li>
@@ -52,61 +57,84 @@
       </header>
       <!-- banner -->
       <main class="banner-color banner parallax-nosotros" id="banner">
-  
-          <span class="text-color-nosotros">Nosotros</span>
-        
+        <div class="color parallax">
+          <h1 class="text-color-nosotros">Nosotros</h1>
+        </div>
       </main>
       <div class="div-one border-nosotros" id="section-nosotros">
-        <section class="div-one-section margin-nosotros">
-          <p class="section-one mp-nosotros">
+        <section class="div-one-section margin-nosotros p-5">
+          <h4 class="section-one mp-nosotros text-center">
             Nuestra empresa, Administradora de casamientos., es una empresa
             dedicada a las ceremonias que nace inspirada en un sueño, un lugar
             al aire libre CLUBHOUSE ,situado en un entorno rodeado de parques,
             terrazas y galerías, resulta ideal para convertir tu evento en una
             celebración única e inigualable. Su ubicación, cuidadosamente
             pensada entre dos espectaculares canchas de polo, deslumbrará a tus
-            invitados desde su llegada..
-          </p>
+            invitados desde su llegada.
+          </h4>
         </section>
       </div>
-      <div id="section2-nosotros" class="color-nosotros style-nosotros">
-        <section class="section-style">
-          <h3 class="text-nosotros">Nuestras Especialidades</h3>
-          <div>
-            <form class="form-nosotros" action="">
-              <label for="">Diseño y Creatividad</label>
-              <input type="range" name="" id="">
 
-              <label for="">Personal capacitados en catering</label>
-              <input type="range" name="" id="">
+      <section id="section2-nosotros" class="color-nosotros style-nosotros row p-5">
+        <h3 class="col-md-6 text-nosotros">Nuestras Especialidades</h3>
+        <form class="col-md-6 form-nosotros" action="">
+          <label for="">Diseño y Creatividad</label>
+          <input type="range" name="" id="" />
 
-              <label for="">Personal capacitados en Produccion</label>
-              <input type="range" name="" id="">
-            </form>
+          <label for="">Personal capacitados en catering</label>
+          <input type="range" name="" id="" />
+
+          <label for="">Personal capacitados en Produccion</label>
+          <input type="range" name="" id="" />
+        </form>
+      </section>
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1000">
+            <img
+              src="../imagenes/galeria 10.jpg"
+              class="d-block d-inline-block w-100"
+              alt="..."
+            />
           </div>
-        </section>
-      </div>
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner ">
-            <div class="carousel-item active " data-bs-interval="30000">
-              <img src="../imagenes/galeria 10.jpg" class="d-block d-inline-block w-50" alt="...">
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img src="../imagenes/galeria3.jpg" class="d-block w-50"  alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="../imagenes/galeria11.jpg" class="d-block w-50" alt="...">
-            </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <img
+              src="../imagenes/galeria3.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="carousel-item">
+            <img
+              src="../imagenes/galeria11.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
         </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
       <footer>
         <div class="footer-two">
           <a class="footer-icons" href="#banner"
@@ -117,6 +145,10 @@
         </div>
       </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
