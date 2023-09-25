@@ -178,14 +178,6 @@
     margin: 2rem 2rem;
     gap: 1rem;
   }
-  /* formulario */
-  .contacto-grid{
-    display: grid;
-  grid-template-columns: repeat(6, auto);
-  grid-template-rows: repeat(2, auto);
-  
-  
-  }
   .gap-home{
     gap: 100px;
   }
