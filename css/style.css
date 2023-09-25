@@ -561,7 +561,7 @@ video{
 .contacto {
   display: flex;
   color: aliceblue;
-  margin-top: 35px;
+  padding-top: 35px;
   border-bottom: 3px dotted pink;
 }
 .div-contacto {
