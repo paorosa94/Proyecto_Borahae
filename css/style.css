@@ -37,15 +37,33 @@
   }
 
   /* nosotros */
+  .logo-style{
+    align-self: baseline;
+    margin-left: 5rem;
+  }
+  .flex-direction{
+    flex-direction: column;
+  }
   .text-color-nosotros {
     display: flex;
     justify-content: center;
     color: #fff3f3;
     position: absolute;
-    bottom: 250px;
+    bottom: -120px;
     left: 100px;
     font-weight: bold;
     font-size: 2rem;
+    background-color: #00000038;
+  }
+  .text-nosotros {
+    font-size: 1.5rem;
+  }
+  .section-style{
+    display: flex;
+      justify-content: center;
+      padding: 4rem;
+  flex-direction:column ;
+  font-size: 1rem;
   }
   .margin-nosotros {
     margin: 0;
@@ -60,10 +78,10 @@
   }
   /* botom */
   .carousel-control-prev {
-    left: 120px;
+    left: 50px;
   }
   .carousel-control-next {
-    right: 125px;
+    right: 50px;
   }
 
 
@@ -100,6 +118,9 @@
     margin-top: 30px;
   }
   /* nosotros */
+  .flex-direction{
+    flex-direction: initial;
+  }
   .text-color-nosotros {
     display: flex;
     justify-content: center;
@@ -109,6 +130,16 @@
     left: 180px;
     font-weight: bold;
     font-size: 4rem;
+  }
+  .text-nosotros {
+    font-size: 2rem;
+  }
+  .section-style{
+    display: flex;
+      justify-content: center;
+      padding: 4rem;
+  flex-direction:column ;
+  font-size: 1rem;
   }
   .margin-nosotros {
     margin: 0;
@@ -155,6 +186,9 @@
     display:flex;
   }
   /* nosotros */
+  .flex-direction{
+    flex-direction: initial;
+  }
   .text-color-nosotros {
     display: flex;
     justify-content: center;
@@ -164,6 +198,17 @@
     left: 380px;
     font-weight: bold;
     font-size: 4rem;
+  }
+  .text-nosotros {
+    font-size: 2rem;
+  }
+  .section-style{
+    display: flex;
+      justify-content: center;
+      padding: 4rem;
+      gap: 300px;
+      flex-direction: initial;
+      font-size: 1rem;
   }
   .margin-nosotros {
     margin: 0;
@@ -221,9 +266,20 @@
     color: #fff3f3;
     position: absolute;
     bottom: 250px;
-    left: 700px;
+    left: 600px;
     font-weight: bold;
     font-size: 4rem;
+  }
+  .text-nosotros {
+    font-size: 2rem;
+  }
+  .section-style{
+    display: flex;
+      justify-content: center;
+      padding: 4rem;
+      gap: 300px;
+      flex-direction: initial;
+      font-size: 1rem;
   }
   .margin-nosotros {
     margin: 0;
@@ -687,7 +743,7 @@ h3 {
 }
 /* banner */
 .parallax-nosotros {
-  background-image: url("../imagenes/nosotros.jpg");
+  background-image: url("../imagenes/Nosotros.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -714,8 +770,15 @@ h3 {
 .carousel {
   margin: 10px;
 }
+.style-nosotros{
+  display: flex;
+  justify-content: center;
+}
+
 .form-nosotros {
   color: white;
+    gap: 10px;
+
 }
 /* footer */
 
