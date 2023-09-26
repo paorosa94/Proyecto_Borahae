@@ -14,73 +14,88 @@
   <body>
     <!-- encabezados -->
     <div id="grilla-servicios">
-      <header class="header">
-        <a href="../index.html">
+      <header class="header sticky">
+        <a class="logo-style" href="../index.html">
           <!--Link en la image-->
           <img class="logo" src="../imagenes/logo.png" alt="" />
         </a>
         <!-- Menu de Navegacion -->
-        <nav id="nav" class="nav">
+        <nav>
           <!-- Lista Desordenada -->
           <ul class="menu">
             <!-- list items -->
             <li class="list-item">
               <!-- links -->
-              <a class="menu-item-list" href="inicio.html">Inicio</a>
+              <a class="menu-item-list" href="../index.html">Inicio</a>
             </li>
 
             <li class="list-item">
-              <a class="menu-item-list" href="nosotros.html">Nosotros</a>
-            </li>
-            <li class="list-item">
-              <a class="menu-item-list" href="servicios.html">Servicios</a>
-            </li>
-
-            <li class="list-item">
-              <a class="menu-item-list" href="Galeria.html">Galeria</a>
-            </li>
-            <li class="list-item">
-              <a class="menu-item-list" href="inicio.html#contacto"
-                >Contactos</a
+              <a class="menu-item-list" href="../pages/nosotros.html"
+                >Nosotros</a
               >
+            </li>
+            <li class="list-item">
+              <a class="menu-item-list" href="../pages/servicios.html"
+                >Servicios</a
+              >
+            </li>
+
+            <li class="list-item">
+              <a class="menu-item-list" href="../pages/Galeria.html">Galeria</a>
+            </li>
+            <li class="list-item">
+              <a class="menu-item-list" href="../index.html#contacto">Contactos</a>
             </li>
           </ul>
         </nav>
       </header>
+      </header>
       <!-- banner -->
       <main class="banner-color banner" id="banner">
-        <div class="color parallax-servicios">
-          <span class="text-color-banner">Celebremos Juntos</span>
+        <div class="parallax-servicios d-flex justify-content-center">
+          <div class="d-flex flex-column justify-content-center">
+            <h3 class="font-size font-galeria">Celebremos Juntos</h3>
+          </div>
         </div>
       </main>
       <section class="div-contacto gap-margin-px">
-        <article id="section-servicios">
-          <img class="slide-left" src="../imagenes/servicio.jpg" alt="" />
-          <h3 class="servicios-align">Clubhouse</h3>
-          <p class="tex-col-servicios servicios-align ">
-            Es el espacio ideal para realizar tu boda al aire libre. Cuenta con
-            una magnífica isla donde realizar la ceremonia, enmarcada por un
-            atardecer soñado
-          </p>
-        </article>
-        <article id="section2-servicios">
-          <img class="slide-rigth" src="../imagenes/gastronimia.jpg" alt="" />
+        <article id="section-servicios" class="section-servicios flex-direction-m">
+          <img class="slide-left w-100 object-fit-cover" src="../imagenes/servicio.jpg" alt="" />
           <div class="div-flex-servicios">
-          <h3 class="servicios-align">Gastronomia</h3>
-          <p class="tex-col-servicios servicios-align">
-            Una excelente propuesta gastronómica que invita a degustar desde los
-            más exquisitos sabores criollos hasta los más refinados platos
-            gourmet
-          </p>
+            <div class="d-flex justify-content-center flex-column text-center">
+            <h3>Clubhouse</h3>
+            <p class="tex-col-servicios">
+              Es el espacio ideal para realizar tu boda al aire libre. Cuenta con
+              una magnífica isla donde realizar la ceremonia, enmarcada por un
+              atardecer soñado
+            </p>
+          </div>
+          </div>
+        </article>
+        <article id="section2-servicios" class="section2-servicios flex-direction-m ">
+          <img class="slide-rigth w-100 object-fit-cover" src="../imagenes/gastronimia.jpg" alt="" />
+          <div class="div-flex-servicios">
+          <div class="d-flex justify-content-center flex-column align-items-center" >
+            <h3 class="text-end">Gastronomia</h3>
+            <p class="tex-col-servicios text-end">
+              Una excelente propuesta gastronómica que invita a degustar desde los
+              más exquisitos sabores criollos hasta los más refinados platos
+              gourmet
+            </p>
+          </div>
         </div>
         </article>
-        <article id="section3-servicios">
-          <img class="slide-left" src="../imagenes/Produccion.jpg" alt="" />
-          <h3 class="servicios-align">Produccion Musical</h3>
-          <p class="tex-col-servicios servicios-align">
-            Contamos con DJ profesional.fotografos,ambientacion,equipos de
-            sonido e iluminación de primera línea.
-          </p>
+        <article id="section3-servicios" class="section3-servicios flex-direction-m">
+          <img class="slide-left w-100 object-fit-cover" src="../imagenes/Produccion.jpg" alt="" />
+          <div class="div-flex-servicios">
+            <div class="d-flex justify-content-center flex-column text-center">
+            <h3>Produccion Musical</h3>
+            <p class="tex-col-servicios">
+              Contamos con DJ profesional.fotografos,ambientacion,equipos de
+              sonido e iluminación de primera línea.
+            </p>
+          </div>
+          </div>
         </article>
       </section>
       <!-- pie de pagina -->
