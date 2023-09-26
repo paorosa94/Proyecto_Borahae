@@ -9,7 +9,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Borahae - Inicio</title>
 
     <!-- Bootstrap Icons CSS -->
@@ -21,13 +21,13 @@
   <body>
     <div id="grilla">
       <!-- encabezados -->
-      <header class="header">
+      <header class="header sticky">
         <a class="logo-style" href="index.html">
           <!--Link en la image-->
           <img class="logo" src="./imagenes/logo.png" alt="" />
         </a>
         <!-- Menu de Navegacion -->
-        <nav class="sticky">
+        <nav class="">
           <!-- Lista Desordenada -->
           <ul class="menu">
             <!-- list items -->
@@ -65,12 +65,14 @@
         </div>
       </main>
       <!-- section -->
-      <div id="section" class="section-white">
+      <div id="section" class="section-white p-5">
         <section class="row">
-          <h3 class="col-md-6 text-center">
-            Es un lugar único donde se combina calidez, naturaleza y
-            profesionalismo.
-          </h3>
+          <div class="col-md-6 align-self-center">
+            <h3 class="text-center">
+              Es un lugar único donde se combina calidez, naturaleza y
+              profesionalismo.
+            </h3>
+          </div>
           <video
             class="col-md-6"
             controls
@@ -86,10 +88,7 @@
       </section>
 
       <!-- contactos -->
-      <section
-        id="contacto"
-        class="contacto gap-home md-items align-items contacto-grid"
-      >
+      <section id="contacto" class="contacto ">
         <div class="div-contacto">
           <h2 class="tex-contacto">Contactos</h2>
           <ul class="div-contacto-items">
@@ -101,13 +100,9 @@
         <!-- formulario -->
         <!--form action es donde vamos a guardar o enviar algun lado es decir que se guarde la info de la web method es como mandamos informacion web a nuestroa rchivo/ POST SE ENVIARA DE MANERA INVISIBLE-->
         <br />
-        <div class="div-consulta md-items">
+        <div class="div-consulta">
           <h2>Dejanos tu consulta</h2>
-          <form
-            class="div-consulta-form md-items align-items"
-            action="form-php"
-            method="POST"
-          >
+          <form class="div-consulta-form" action="form-php" method="POST">
             <!--Label es como el titulo del input
   Es el texto visible para los usuarios -->
             <label for="" class="div-one"></label>
@@ -160,10 +155,10 @@
             <br />
           </form>
         </div>
+        <aside id="aside">
+          <img class="aside-one" src="imagenes/home2.jpg" alt="" />
+        </aside>
       </section>
-      <aside id="aside">
-        <img class="aside-one aside-none" src="imagenes/home2.jpg" alt="" />
-      </aside>
 
       <!-- pie de pagina -->
       <div id="footer-one">

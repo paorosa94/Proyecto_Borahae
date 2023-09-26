@@ -3,43 +3,15 @@
 2-BLOQUE DE HEAD:dentro de head se puede llamar a un alemento y aplicar estilo a todos ellos
 3-ARCHIVO DE CSS: es mas recomendable ya que se puede expandir y se puede mantener*/
 
-h1 {
-  font-size: 3rem;
-}
-h2 {
-  font-size: 2rem;
-}
-h3 {
-  font-size: 1.5rem;
-}
-h4 {
-  font-size: 1rem;
-}
-h5 {
-  font-size: 0.8rem;
-}
-h6 {
-  font-size: 0.6rem;
-}
 
-.sticky {
-  position: sticky;
-}
-.section-white {
-  background-color: #fff;
-}
 @media only screen and (max-width: 0px) {
   /* home */
-  .md-style {
-    flex-direction: column;
-  }
-
   .text-color-banner {
     font-size: 1rem;
     bottom: -35px;
   }
   .section-one {
-    font-size: 15px;
+    /* font-size: 15px; */
     margin-right: 8rem;
   }
   .div-one-section {
@@ -48,12 +20,7 @@ h6 {
     gap: 1rem;
     flex-direction: column;
   }
-  .md-items {
-    align-items: center;
-  }
-  .aside-none {
-    display: none;
-  }
+
   .tex-footer {
     font-size: 1rem;
     align-self: center;
@@ -68,17 +35,6 @@ h6 {
   .flex-direction {
     flex-direction: column;
   }
-  .text-color-nosotros {
-    display: flex;
-    justify-content: center;
-    color: #fff3f3;
-    position: absolute;
-    bottom: -120px;
-    left: 100px;
-    font-weight: bold;
-    font-size: 2rem;
-    background-color: #00000038;
-  }
   .text-nosotros {
     font-size: 1.5rem;
   }
@@ -89,39 +45,17 @@ h6 {
     flex-direction: column;
     font-size: 1rem;
   }
-  .margin-nosotros {
-    margin: 0;
-  }
-  .mp-nosotros {
-    margin: 0;
-    padding: 50px;
-  }
-  .carousel-inner {
-    display: flex;
-    justify-content: space-around;
-  }
-  /* botom */
-  .carousel-control-prev {
-    left: 50px;
-  }
-  .carousel-control-next {
-    right: 50px;
-  }
 }
-
 /* MOBILE */
 @media only screen and (max-width: 600px) {
   /* home */
-  .md-style {
-    flex-direction: column;
-  }
 
   .text-color-banner {
     font-size: 1.5rem;
     bottom: -35px;
   }
   .section-one {
-    font-size: 1rem;
+    /* font-size: 1rem; */
     margin-right: 5rem;
   }
   .div-one-section {
@@ -131,12 +65,7 @@ h6 {
     flex-direction: column;
   }
   /* formulario */
-  .md-items {
-    align-items: center;
-  }
-  .aside-none {
-    display: none;
-  }
+
   .tex-footer {
     font-size: 1.5rem;
     align-self: center;
@@ -147,16 +76,6 @@ h6 {
   .flex-direction {
     flex-direction: initial;
   }
-  .text-color-nosotros {
-    display: flex;
-    justify-content: center;
-    color: #fff3f3;
-    position: absolute;
-    bottom: 250px;
-    left: 180px;
-    font-weight: bold;
-    font-size: 4rem;
-  }
   .text-nosotros {
     font-size: 2rem;
   }
@@ -167,27 +86,15 @@ h6 {
     flex-direction: column;
     font-size: 1rem;
   }
-  .margin-nosotros {
-    margin: 0;
-  }
-  .mp-nosotros {
-    margin: 0;
-    padding: 50px;
-  }
-  .carousel-inner {
-    display: flex;
-    justify-content: space-around;
-  }
-  /* botom */
-  .carousel-control-prev {
-    left: 120px;
-  }
-  .carousel-control-next {
-    right: 125px;
-  }
 }
 
 @media only screen and (max-width: 768px) {
+  .header{
+    flex-direction: column;
+  }
+  .menu{
+    flex-direction: column;
+  }
   .sticky {
     position: relative;
   }
@@ -196,39 +103,25 @@ h6 {
     font-size: 2rem;
     bottom: 150px;
   }
-  .section-one {
-    font-size: 1.5rem;
-  }
+  /* .section-one {
+ font-size: 1.5rem; 
+  } */
   .div-one-section {
     display: flex;
     margin: 2rem 2rem;
     gap: 1rem;
   }
-  /* formulario */
-  .contacto-grid {
-    display: grid;
-    grid-template-columns: repeat(6, auto);
-    grid-template-rows: repeat(2, auto);
+  .contacto{
+    flex-direction: column;
+    align-items: center;
   }
-  .gap-home {
-    gap: 100px;
-  }
-  .aside-none {
-    display: flex;
+  gap-margin-px{
+    gap: 0px;
+    margin: 0px;
   }
   /* nosotros */
   .flex-direction {
     flex-direction: initial;
-  }
-  .text-color-nosotros {
-    display: flex;
-    justify-content: center;
-    color: #fff3f3;
-    position: absolute;
-    bottom: 250px;
-    left: 380px;
-    font-weight: bold;
-    font-size: 4rem;
   }
   .text-nosotros {
     font-size: 2rem;
@@ -240,26 +133,6 @@ h6 {
     gap: 300px;
     flex-direction: initial;
     font-size: 1rem;
-  }
-  .margin-nosotros {
-    margin: 0;
-  }
-  .mp-nosotros {
-    margin: 0;
-    padding: 50px;
-  }
-
-  /* carousel */
-  .carousel-inner {
-    display: flex;
-    justify-content: space-around;
-  }
-  /* botom */
-  .carousel-control-prev {
-    left: 140px;
-  }
-  .carousel-control-next {
-    right: 140px;
   }
 }
 
@@ -269,35 +142,20 @@ h6 {
     font-size: 3rem;
     bottom: 150px;
   }
-  .section-one {
-    font-size: 2rem;
-  }
+  /* .section-one {
+    font-size: 2rem; 
+  } */
   .div-one-section {
     display: flex;
     margin: 2rem 2rem;
     gap: 1rem;
     flex-direction: initial;
   }
-  .gap-home {
-    gap: 100px;
-  }
   .aside-none {
     display: flex;
   }
-  .align-items {
-    align-items: initial;
-  }
   /* nosotros */
-  .text-color-nosotros {
-    display: flex;
-    justify-content: center;
-    color: #fff3f3;
-    position: absolute;
-    bottom: 250px;
-    left: 600px;
-    font-weight: bold;
-    font-size: 4rem;
-  }
+
   .text-nosotros {
     font-size: 2rem;
   }
@@ -308,25 +166,6 @@ h6 {
     gap: 300px;
     flex-direction: initial;
     font-size: 1rem;
-  }
-  .margin-nosotros {
-    margin: 0;
-  }
-  .mp-nosotros {
-    margin: 0;
-    padding: 50px;
-  }
-  /* carousel */
-  .carousel-inner {
-    display: flex;
-    justify-content: space-around;
-  }
-  /* botom */
-  .carousel-control-prev {
-    left: 230px;
-  }
-  .carousel-control-next {
-    right: 230px;
   }
 }
 
@@ -384,6 +223,31 @@ header {
 
 footer {
   grid-area: footer1;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 0.8rem;
+}
+h6 {
+  font-size: 0.6rem;
+}
+
+.sticky {
+  position: sticky;
+}
+.section-white {
+  background-color: #fff;
 }
 /* HOME -INDEX */
 /* QUEDA PENDIENTE EN MEJORAR LA SEPARACION DEL LOGO Y NAV */
@@ -580,17 +444,13 @@ video {
   font-family: "Kaushan Script", cursive;
   align-self: center;
 }
-
-.iframe-one {
-  margin-left: 1.4rem;
-}
-
 /* CONTACTOS */
 .contacto {
   display: flex;
   color: aliceblue;
   padding-top: 35px;
   border-bottom: 3px dotted pink;
+  gap: 10px;
 }
 .div-contacto {
   display: flex;
@@ -789,10 +649,9 @@ footer {
 
 .text-nosotros {
   color: white;
+  align-self: center;
 }
-.carousel {
-  margin: 10px;
-}
+
 .style-nosotros {
   display: flex;
   justify-content: center;
@@ -801,6 +660,7 @@ footer {
 .form-nosotros {
   color: white;
   gap: 10px;
+  font-size: 1rem;
 }
 /* footer */
 
@@ -980,6 +840,7 @@ footer {
   font-size: 3rem;
   background-color: #00000078;
   font-weight: bold;
+  align-self: center;
 }
 .font-size-background{
   font-size: 2rem;
