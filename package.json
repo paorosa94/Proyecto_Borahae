@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-sass": "node-sass --include-path scss sass/styles.scss css/style_copia.css",
+    "build-sass": "node-sass --include-path scss sass/styles.scss css/style.css",
     "watch-sass": "nodemon -e scss -x  \"npm run build-sass\"",
-    "sass":"sass --watch sass/styles.scss css/style_copia.css"
+    "sass":"sass --watch sass/styles.scss css/style.css"
 
   },
   "keywords": [],
