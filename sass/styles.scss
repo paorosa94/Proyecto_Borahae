@@ -2,12 +2,13 @@
 @import "./utilities/mixins";
 @import "./utilities/maps";
 @import './layout/grid';
-@import './layout/navigation';
 @import './layout/header';
-@import './layout/footer';
-@import './layout/forms';
+@import "./global/reset";
+@import './components/forms';
+@import './components/footer';
 @import './components/buttons';
 @import "./components/carrusel";
+@import './components/navigation';
 @import "./views/home";
 @import "./views/nosotros";
 @import "./views/servicios";
