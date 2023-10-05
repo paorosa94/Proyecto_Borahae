@@ -1,0 +1,43 @@
+footer {
+  color: $color-primary;
+  background-image: $footer-background-image;
+  font-family: "Philosopher", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 5px groove $color-purple;
+
+  .footer__block {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+
+    .footer__block--icons {
+        width: 100%;
+        display: block;
+        text-align: center;
+        font-size: 45px;
+    }
+  }
+  
+  .footer__block--md {
+    color: $color-primary;
+    font-size: 15px;
+    align-self: center;
+    font-weight: bold;
+    border-bottom: 2px solid $color-secundary;
+    transition: all 0.5s ease;
+    margin-top: 5px;
+  }
+  
+  .footer__block--md:hover {
+    border-color: $color-purple;
+  }
+  
+.footer__block--small {
+  font-size: 1.17em;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+}

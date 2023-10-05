@@ -1,19 +1,13 @@
 header {
   display: flex; /*alineando los elementos*/
   /* justify-content: center; alineacion horizontal mas centrado */
-  align-items: center; /*alineacion vertical*/
-  /* gap: 30rem;separando el logo y menu */
+  // align-items: center; /*alineacion vertical*/
   flex-wrap: wrap;
   justify-content: space-between;
   top: 0px;
   background-color: $color-primary;
   z-index: 1;
   position: sticky;
-
-  // tag a
-  .header__logo {
-    margin-left: 5rem;
-  }
   // tag img
   .header__logo--img {
     width: 150px;
@@ -43,7 +37,6 @@ header {
     .menu__list {
       display: flex;
       gap: 1.5rem;
-      justify-content: center;
 
       .menu__list--item {
         font-family: $font-family-secundary;
@@ -143,10 +136,4 @@ header {
   }
 }
 
-ul {
-  list-style-type: none;
-}
-a {
-  /* sacamos por defecto los estilos de link  */
-  text-decoration: none;
-}
+

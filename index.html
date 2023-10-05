@@ -22,7 +22,7 @@
     <div id="grilla">
       <!-- encabezados -->
       <header class="header sticky">
-        <a class="header__logo" href="index.html">
+        <a href="index.html">
           <!--Link en la image-->
           <img class="header__logo--img" src="./imagenes/logo.png" alt="" />
         </a>
@@ -58,9 +58,9 @@
         </nav>
       </header>
       <!-- banner -->
-      <main class="banner-color banner" id="banner">
-        <div class="color parallax">
-          <h1 class="text-color-banner">
+      <main >
+        <div class="parallax">
+          <h1 class="main__items--text">
             Imagina tu boda. Elegi el mejor lugar
           </h1>
         </div>
@@ -84,15 +84,13 @@
           ></video>
         </section>
       </div>
-      <section id="section-two" class="section-two parallax-two">
-        <!-- <img class="small-two" src="imagenes/home3.jpg" alt="" /> -->
+      <section id="section-two" class="parallax-two">
       </section>
-
       <!-- contactos -->
-      <section id="contacto" class="contacto ">
-        <div class="div-contacto">
-          <h2 class="tex-contacto">Contactos</h2>
-          <ul class="div-contacto-items">
+      <section id="contacto" class="contacto" >
+        <div class="contacto__block">
+          <h2 class="contacto__block--mdf">Contactos</h2>
+          <ul class="contacto__block--bd">
             <li>Jose Martin 1685, CABA, Argentina</li>
             <li>1123898981</li>
             <li>borahae@gmail.com</li>
@@ -101,14 +99,14 @@
         <!-- formulario -->
         <!--form action es donde vamos a guardar o enviar algun lado es decir que se guarde la info de la web method es como mandamos informacion web a nuestroa rchivo/ POST SE ENVIARA DE MANERA INVISIBLE-->
         <br />
-        <div class="div-consulta">
-          <h2>Dejanos tu consulta</h2>
-          <form class="div-consulta-form" action="form-php" method="POST">
+        <div class="consulta">
+          <h2 class="consulta--md">Dejanos tu consulta</h2>
+          <form class="" action="form-php" method="POST">
             <!--Label es como el titulo del input
   Es el texto visible para los usuarios -->
-            <label for="" class="div-one"></label>
+            <label for="" ></label>
             <input
-              class="inputs-form"
+              class="form__input "
               type="text"
               required
               name="nombre"
@@ -119,42 +117,39 @@
             <label for="" class="div-one"></label>
             <br />
             <input
-              class="inputs-form"
+              class="form__input "
               type="email"
               placeholder="Email"
               required
               name=""/>
 
-            <label for="" class="div-one"></label>
+            <label for="" ></label>
             <br />
-            <input class="inputs-form" type="number" placeholder="Numero telefonico" name="" required />
+            <input class="form__input " type="number" placeholder="Numero telefonico" name="" required />
 
             <!--Text Area lo que genera usuario escriba lo que quiera-->
             <br />
             <textarea
-              class="div-one"
               name="" placeholder="Escriba tu mensaje aqui" cols="30" rows="10"></textarea>
             <br />
-            <button class="inputs-form botom" type="submit">Enviar</button>
+            <button class="form__input  bottom" type="submit">Enviar</button>
             <br />
             <br />
           </form>
         </div>
-        <aside id="aside">
-          <img class="aside-one" src="imagenes/home2.jpg" alt="" />
+        <aside >
+          <img class="aside__block" src="imagenes/home2.jpg" alt="" />
         </aside>
       </section>
-
-      <!-- pie de pagina -->
-      <div id="footer-one">
+      <div id="redes">
         <!-- Redes sociales -->
-        <div class="footer-redes p-5">
-          <h4 class="tex-footer">Deslumbrá a tus invitados desde su llegada</h4>
+        <div class="redes d-flex justify-content-center p-5">
+          <h4 >Deslumbrá a tus invitados desde su llegada</h4>
 
-          <ul class="list-two">
-            <li class="list-two-one">
+          <ul class="d-flex">
+            <li>
               <a
-                class="list-two-color"
+                class="list-redes"
                 href="https://es-la.facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -162,9 +157,9 @@
                 <i class="bi bi-facebook"></i> Facebook
               </a>
             </li>
-            <li class="list-two-one">
+            <li>
               <a
-                class="list-two-color"
+                class="list-redes"
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -172,9 +167,9 @@
                 <i class="bi bi-instagram"></i> Instagram
               </a>
             </li>
-            <li class="list-two-one">
+            <li>
               <a
-                class="list-two-color"
+                class="list-redes"
                 href="https://twitter.com/?lang=es"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -185,13 +180,14 @@
           </ul>
         </div>
       </div>
+      <!-- pie de pagina -->
       <footer>
-        <div class="footer-two">
-          <a class="footer-icons" href="#banner"
+        <div class="footer__block">
+          <a class="footer__block--icons" href="#banner"
             ><i class="bi bi-chevron-up"></i
           ></a>
-          <a class="footer-two-color" href="#banner">Volver arriba</a>
-          <h3 class="nosotros-tamano">Hecho por Paola Rosales</h3>
+          <a class="footer__block--md" href="#banner">Volver arriba</a>
+          <h3 class="footer__block--small">Hecho por Paola Rosales</h3>
         </div>
       </footer>
     </div>
