@@ -1,40 +1,8 @@
-/* EXISTEN 3 FORMAS PARA AGG STYLE
-1-LINEA DE STYLE:dentro de un elemento de boddy en apertura
-2-BLOQUE DE HEAD:dentro de head se puede llamar a un alemento y aplicar estilo a todos ellos
-3-ARCHIVO DE CSS: es mas recomendable ya que se puede expandir y se puede mantener*/
-
-
-
-
-/* HOME -INDEX */
-/* QUEDA PENDIENTE EN MEJORAR LA SEPARACION DEL LOGO Y NAV */
-
-/*Menu de Navegacion*/
-/* sacamos las viñetas */
-
-
-
-/* banner */
-/* efecto parallax */
-
-
-
-/* SECTION 2 */
-
-
 
 .section-one {
   color: black;
   font-family: "Kaushan Script", cursive;
   align-self: center;
-}
-/* CONTACTOS */
-
-
-
-
-
-.custom-button:hover {
 }
 
 /* Pie de pagina */
@@ -45,31 +13,6 @@ h4 {
 
 /* NOSOTROS */
 
-#grilla-nosotros {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(7, auto);
-  grid-template-areas:
-    "header header"
-    "banner banner"
-    "section1 section1"
-    "section2 section2 "
-    "section2 section2 "
-    "section3 section3"
-    "footer1 footer1 ";
-}
-
-#section-nosotros {
-  grid-area: section1;
-}
-
-#section2-nosotros {
-  grid-area: section2;
-}
-
-#carouselExampleInterval {
-  grid-area: section3;
-}
 /* banner */
 .parallax-nosotros {
   background-image: url("../imagenes/Nosotros.jpg");
@@ -111,35 +54,6 @@ h4 {
 }
 /* footer */
 
-
-/* Servicios */
-#grilla-servicios {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(6, auto);
-  grid-template-areas:
-    "header header"
-    "banner banner"
-    "articulo1 articulo1"
-    "articulo2 articulo2 "
-    "articulo2 articulo2 "
-    "footer1 footer1 ";
-}
-
-#section-servicios {
-  grid-area: articulo1;
-}
-.section-servicios{
-  display: flex;
-  flex-direction: initial;
-  color: white;
-  gap: 20px;
-  font-size: 1rem;
-}
-#section2-servicios {
-  grid-area: articulo2;
-
-}
 .section2-servicios{
   display: flex;
   flex-direction: row-reverse;
@@ -178,7 +92,6 @@ h4 {
   margin-bottom: 20px;
   margin-top: 50px;
 }
-
 
 /* section2 */
 .div-flex-servicios {
@@ -259,23 +172,7 @@ h4 {
   border-bottom: 5px purple ridge;
   object-fit: cover;
 }
-/* GALERIA */
 
-#grilla-galeria {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(6, auto);
-  grid-template-areas:
-    "header header"
-    "banner banner"
-    "galeria galeria"
-    "galeria galeria"
-    "galeria galeria"
-    "footer1 footer1 ";
-}
-#galeria {
-  grid-area: galeria;
-}
 .banner-styles {
   display: flex;
   flex-direction: column;
