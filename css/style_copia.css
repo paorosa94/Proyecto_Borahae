@@ -1,9 +1,5 @@
 
-.section-one {
-  color: black;
-  font-family: "Kaushan Script", cursive;
-  align-self: center;
-}
+
 
 /* Pie de pagina */
 h4 {
@@ -11,191 +7,7 @@ h4 {
   font-size: 20px;
 }
 
-/* NOSOTROS */
 
-/* banner */
-.parallax-nosotros {
-  background-image: url("../imagenes/Nosotros.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: black;
-  width: 100%;
-  height: 80vh;
-  border-bottom: 5px purple ridge;
-  object-fit: cover;
-}
-
-/* section2 */
-.border-nosotros {
-  border-bottom: purple solid 2px;
-}
-.color-nosotros {
-  background-color: black;
-  border-bottom: 2px solid purple;
-}
-
-.text-nosotros {
-  color: white;
-  align-self: center;
-  font-size: 2rem
-}
-
-.style-nosotros {
-  display: flex;
-  justify-content: center;
-}
-
-.form-nosotros {
-  color: white;
-  gap: 10px;
-  font-size: 1rem;
-}
-/* footer */
-
-.section2-servicios{
-  display: flex;
-  flex-direction: row-reverse;
-  color: white;
-  gap: 20px;
-  font-size: 1rem;
-}
-#section3-servicios {
-  grid-area: articulo3;
-}
-.section3-servicios{
-  display: flex;
-  flex-direction: initial;
-  color: white;
-  gap: 20px;
-  font-size: 1rem;
-}
-/* banner */
-.parallax-servicios {
-  background-image: url("../imagenes/ServiciosP.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: black;
-  width: 100%;
-  height: 80vh;
-  border-bottom: 5px purple ridge;
-  object-fit: cover;
-}
-.tex-col-servicios {
-  color: white;
-}
-.gap-margin-px {
-  gap: 40px;
-  margin-bottom: 20px;
-  margin-top: 50px;
-}
-
-/* section2 */
-.div-flex-servicios {
-  display: flex;
-  flex-direction: initial;
-  gap: 20px;
-}
-.slide-left {
-  -webkit-animation-name: slideInLeft;
-  animation-name: slideInLeft;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-@-webkit-keyframes slideInLeft {
-  0% {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-    visibility: visible;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-@keyframes slideInLeft {
-  0% {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-    visibility: visible;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-.slide-rigth {
-  -webkit-animation-name: slideInRight;
-  animation-name: slideInRight;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-@-webkit-keyframes slideInRight {
-  0% {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    visibility: visible;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-@keyframes slideInRight {
-  0% {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    visibility: visible;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-/* GALERIA */
-.parallax-galeria {
-  background-image: url("../imagenes/galeria11.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: black;
-  width: 100%;
-  height: 80vh;
-  border-bottom: 5px purple ridge;
-  object-fit: cover;
-}
-
-.banner-styles {
-  display: flex;
-  flex-direction: column;
-  color: white;
-  position: absolute;
-  bottom: 300px;
-  left: 520px;
-}
-.font-size{
-  font-size: 3rem;
-  background-color: #00000078;
-  color: white;
-  font-weight: bold;
-  align-self: center;
-}
-.font-size-background{
-  color: white;
-  font-size: 2rem;
-  background-color: #00000078
-}
-.background-color{
-  background-color: white;
-}
 
 /* MOBILE */
 
@@ -232,9 +44,7 @@ h4 {
   .flex-direction {
     flex-direction: initial;
   }
-  .text-nosotros {
-    font-size: 1.5rem;
-  }
+  
   .section-style {
     display: flex;
     justify-content: center;
@@ -251,9 +61,7 @@ h4 {
     text-align: center !important;
   }
   /* GALERIA */
-  .font-galeria{
-    font-size: 2rem;
-  }
+ 
   .font-galeria-size{
     font-size: 1.7rem;
   }

@@ -1,0 +1,107 @@
+/* banner */
+.parallax-servicios {
+  background-image: url("../imagenes/ServiciosP.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $color-primary;
+  width: 100%;
+  height: 80vh;
+  border-bottom: 5px $color-purple ridge;
+  object-fit: cover;
+}
+
+.section2-servicios {
+  display: flex;
+  flex-direction: row-reverse;
+  color: white;
+  gap: 20px;
+  font-size: 1rem;
+}
+#section3-servicios {
+  grid-area: articulo3;
+}
+.section3-servicios {
+  display: flex;
+  flex-direction: initial;
+  color: white;
+  gap: 20px;
+  font-size: 1rem;
+}
+
+.tex-col-servicios {
+  color: white;
+}
+.gap-margin-px {
+  gap: 40px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+/* section2 */
+.div-flex-servicios {
+  display: flex;
+  flex-direction: initial;
+  gap: 20px;
+}
+.slide-left {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+.slide-rigth {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes slideInRight {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes slideInRight {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}

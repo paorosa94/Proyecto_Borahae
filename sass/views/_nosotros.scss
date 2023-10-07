@@ -1,0 +1,48 @@
+/* banner */
+main {
+  .parallax-nosotros {
+    background-image: url("../imagenes/Nosotros.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $color-primary;
+    width: 100%;
+    height: 80vh;
+    border-bottom: 5px $color-purple ridge;
+    object-fit: cover;
+  }
+}
+
+// .font-size{
+//     font-size: 3rem;
+//     background-color: #00000078;
+//     color: white;
+//     font-weight: bold;
+//     align-self: center;
+//   }
+section {
+  .section__block {
+    color: $color-primary;
+    font-family: $font-terciary, cursive;
+    align-self: center;
+  }
+}
+.section__details{
+    border-bottom: 2px solid $color-purple;
+    
+.section__details--text {
+  color: $color-secundary;
+  align-self: center;
+  font-size: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: $color-secundary;
+  gap: 10px;
+  font-size: 1rem;
+}
+}

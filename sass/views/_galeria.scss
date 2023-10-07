@@ -1,0 +1,29 @@
+.parallax-galeria {
+    background-image: url("../imagenes/galeria11.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $color-primary;
+    width: 100%;
+    height: 80vh;
+    border-bottom: 5px $color-secundary ridge;
+    object-fit: cover;
+  }
+  
+.banner-styles {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: absolute;
+  bottom: 300px;
+  left: 520px;
+}
+.font-size-background{
+  color: white;
+  font-size: 2rem;
+  background-color: #00000078
+}
+.background-color{
+  background-color: white;
+}
