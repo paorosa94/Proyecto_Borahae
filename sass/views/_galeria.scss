@@ -1,5 +1,7 @@
+main{
+  // falta anidar y darle convencion
 .parallax-galeria {
-    background-image: url("../imagenes/galeria11.jpg");
+    background-image: url("../imagenes/galeria11.jpg")!important;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -9,8 +11,8 @@
     height: 80vh;
     border-bottom: 5px $color-secundary ridge;
     object-fit: cover;
-  }
-  
+}
+} 
 .banner-styles {
   display: flex;
   flex-direction: column;

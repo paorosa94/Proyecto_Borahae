@@ -1,4 +1,6 @@
 /* banner */
+main{
+// falta anidar y darle convencion
 .parallax-servicios {
   background-image: url("../imagenes/ServiciosP.jpg");
   background-attachment: fixed;
@@ -11,7 +13,7 @@
   border-bottom: 5px $color-purple ridge;
   object-fit: cover;
 }
-
+}
 .section2-servicios {
   display: flex;
   flex-direction: row-reverse;
