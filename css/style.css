@@ -46,22 +46,30 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(6, auto);
-  grid-template-areas: "header header" "banner banner" "articulo1 articulo1" "articulo2 articulo2 " "articulo2 articulo2 " "footer1 footer1 "; }
+  grid-template-areas: "header header" "banner banner" "articulo1 articulo1" "articulo2 articulo2 " "articulo3 articulo3 " "footer1 footer1 "; }
 
 #section-servicios {
   grid-area: articulo1; }
 
-.section-servicios {
-  display: flex;
-  flex-direction: initial;
-  color: white;
-  gap: 20px;
-  font-size: 1rem; }
-
 #section2-servicios {
   grid-area: articulo2; }
 
+#section3-servicios {
+  grid-area: articulo3; }
+
 /* GALERIA */
+#grilla-galeria {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "header header" "banner banner" "imagenes imagenes" "galeria galeria" "galeria galeria" "footer1 footer1 "; }
+
+#imagenes {
+  grid-area: imagenes; }
+
+#galeria {
+  grid-area: galeria; }
+
 html body {
   font-size: 68%;
   margin: 0;
@@ -401,36 +409,32 @@ main .parallax-servicios {
   border-bottom: 5px purple ridge;
   object-fit: cover; }
 
-.section2-servicios {
-  display: flex;
-  flex-direction: row-reverse;
+main .main__items--size {
+  font-size: 3rem;
+  background-color: #00000078;
   color: white;
-  gap: 20px;
-  font-size: 1rem; }
+  font-weight: bold;
+  align-self: center; }
 
-#section3-servicios {
-  grid-area: articulo3; }
-
-.section3-servicios {
+.servicios {
   display: flex;
-  flex-direction: initial;
-  color: white;
-  gap: 20px;
-  font-size: 1rem; }
-
-.tex-col-servicios {
-  color: white; }
-
-.gap-margin-px {
+  flex-direction: column;
   gap: 40px;
   margin-bottom: 20px;
   margin-top: 50px; }
-
-/* section2 */
-.div-flex-servicios {
-  display: flex;
-  flex-direction: initial;
-  gap: 20px; }
+  .servicios article {
+    display: flex;
+    flex-direction: initial;
+    color: white;
+    gap: 20px;
+    font-size: 1rem;
+    /* section*/ }
+    .servicios article .article__servicios--clubhouse, .servicios article .article__servicios--gastronomia, .servicios article .article__servicios--produccion {
+      display: flex;
+      flex-direction: initial;
+      gap: 20px; }
+      .servicios article .article__servicios--clubhouse .article__servicios--clubhouse-color, .servicios article .article__servicios--gastronomia .article__servicios--clubhouse-color, .servicios article .article__servicios--produccion .article__servicios--clubhouse-color, .servicios article .article__servicios--gastronomia .article__servicios--gastronomia-color, .servicios article .article__servicios--produccion .article__servicios--produccion-color {
+        color: white; }
 
 .slide-left {
   -webkit-animation-name: slideInLeft;
@@ -496,18 +500,10 @@ main .parallax-galeria {
   border-bottom: 5px white ridge;
   object-fit: cover; }
 
-.banner-styles {
-  display: flex;
-  flex-direction: column;
-  color: white;
-  position: absolute;
-  bottom: 300px;
-  left: 520px; }
-
 .font-size-background {
   color: white;
   font-size: 2rem;
-  background-color: #00000078; }
+  background-color: #000000; }
 
 .background-color {
   background-color: white; }

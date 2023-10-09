@@ -16,7 +16,7 @@ main {
     object-fit: cover;
   }
   .main__items--text {
-    color: $color-secundary;
+    color: $color-secondary;
     position: absolute;
     left: 15px;
     font-weight: bold;
@@ -27,7 +27,7 @@ main {
   }
 }
 .section__white{
-  background-color: $color-secundary;
+  background-color: $color-secondary;
 }
 video {
   width: 50%;
@@ -45,7 +45,7 @@ video {
 .contacto {
   display: flex;
   border-bottom: 3px dotted pink;
-  color: $color-secundary;
+  color: $color-secondary;
   margin-top: 10px;
   gap: 50px;
 
@@ -127,7 +127,7 @@ video {
   align-items: center;
   margin-right: 80px;
   gap: 1rem;
-  color: $color-secundary;
+  color: $color-secondary;
   flex-direction: column;
 
   ul {
@@ -139,7 +139,7 @@ video {
       font-family: "Merriweather", serif;
       font-size: 20px;
       gap: 0.5rem;
-      color: $color-secundary;
+      color: $color-secondary;
     }
   }
 }

@@ -24,7 +24,7 @@ main {
 section {
   .section__block {
     color: $color-primary;
-    font-family: $font-terciary, cursive;
+    font-family: $font-tertiary, cursive;
     align-self: center;
   }
 }
@@ -32,7 +32,7 @@ section {
     border-bottom: 2px solid $color-purple;
     
 .section__details--text {
-  color: $color-secundary;
+  color: $color-secondary;
   align-self: center;
   font-size: 2rem;
 }
@@ -41,7 +41,7 @@ form {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  color: $color-secundary;
+  color: $color-secondary;
   gap: 10px;
   font-size: 1rem;
 }

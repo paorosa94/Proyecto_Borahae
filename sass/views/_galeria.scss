@@ -9,23 +9,26 @@ main{
     background-color: $color-primary;
     width: 100%;
     height: 80vh;
-    border-bottom: 5px $color-secundary ridge;
+    border-bottom: 5px $color-secondary ridge;
     object-fit: cover;
 }
 } 
-.banner-styles {
-  display: flex;
-  flex-direction: column;
-  color: white;
-  position: absolute;
-  bottom: 300px;
-  left: 520px;
-}
 .font-size-background{
-  color: white;
+  color: $color-secondary;
   font-size: 2rem;
-  background-color: #00000078
+  background-color: $color-primary
 }
 .background-color{
-  background-color: white;
+  background-color: $color-secondary;
 }
+
+
+
+// .banner-styles {
+//   display: flex;
+//   flex-direction: column;
+//   color: $color-secondary;
+//   position: absolute;
+//   bottom: 300px;
+//   left: 520px;
+// }
