@@ -1,0 +1,34 @@
+main{
+  // falta anidar y darle convencion
+.parallax-galeria {
+    background-image: url("../imagenes/galeria11.jpg")!important;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $color-primary;
+    width: 100%;
+    height: 80vh;
+    border-bottom: 5px $color-secondary ridge;
+    object-fit: cover;
+}
+} 
+.font-size-background{
+  color: $color-secondary;
+  font-size: 2rem;
+  background-color: $color-primary
+}
+.background-color{
+  background-color: $color-secondary;
+}
+
+
+
+// .banner-styles {
+//   display: flex;
+//   flex-direction: column;
+//   color: $color-secondary;
+//   position: absolute;
+//   bottom: 300px;
+//   left: 520px;
+// }

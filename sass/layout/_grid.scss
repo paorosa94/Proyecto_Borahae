@@ -1,0 +1,121 @@
+// home
+#grilla {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(9, auto);
+  grid-template-areas:
+    "header header"
+    "banner banner"
+    "section1 section1 "
+    "section1 section1 "
+    "section2 section2 "
+    "section2 section2 "
+    "contacto contacto "
+    "redes redes"
+    "footer1 footer1 ";
+  /* height: 100vh; */
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: banner;
+}
+#section {
+  grid-area: section1;
+}
+#section-two {
+  grid-area: section2;
+}
+
+#contacto {
+  grid-area: contacto;
+}
+#redes {
+  grid-area: redes;
+}
+
+footer {
+  grid-area: footer1;
+}
+
+#grilla-nosotros {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(7, auto);
+  grid-template-areas:
+    "header header"
+    "banner banner"
+    "section1 section1"
+    "section2 section2 "
+    "section2 section2 "
+    "section3 section3"
+    "footer1 footer1 ";
+}
+// header {
+//   grid-area: header;
+// }
+
+// main {
+//   grid-area: banner;
+// }
+
+#section-nosotros {
+  grid-area: section1;
+}
+
+#section2-nosotros {
+  grid-area: section2;
+}
+
+#carouselExampleInterval {
+  grid-area: section3;
+}
+
+/* Servicios */
+#grilla-servicios {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas:
+    "header header"
+    "banner banner"
+    "articulo1 articulo1"
+    "articulo2 articulo2 "
+    "articulo3 articulo3 "
+    "footer1 footer1 ";
+}
+
+#section-servicios {
+  grid-area: articulo1;
+}
+#section2-servicios {
+  grid-area: articulo2;
+}
+
+#section3-servicios {
+  grid-area: articulo3;
+}
+
+/* GALERIA */
+
+#grilla-galeria {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas:
+    "header header"
+    "banner banner"
+    "imagenes imagenes"
+    "galeria galeria"
+    "galeria galeria"
+    "footer1 footer1 ";
+}
+#imagenes {
+  grid-area: imagenes;
+}
+#galeria{
+  grid-area: galeria;
+}

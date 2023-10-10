@@ -1,0 +1,139 @@
+header {
+  display: flex; /*alineando los elementos*/
+  /* justify-content: center; alineacion horizontal mas centrado */
+  // align-items: center; /*alineacion vertical*/
+  flex-wrap: wrap;
+  justify-content: space-between;
+  top: 0px;
+  background-color: $color-primary;
+  z-index: 1;
+  position: sticky;
+  // tag img
+  .header__logo--img {
+    width: 150px;
+    height: 100px;
+  }
+  // probar si .menu funciona con la semantica nav y sino dejarlo en UL pasarlo todo a la clase
+  // aca va nabvar y menu
+  .menu {
+    display: flex;
+    flex-wrap: wrap; /* ver porque no se acomoda */
+    /* width: 500px; se aplica esto primero para que tenga un ancho y poder separarlos */
+    justify-content: space-around; /* separando los items*/
+    margin-right: 6rem;
+    padding: 0;
+    margin-top: 0;
+    align-items: center;
+    /* TRANSICION */
+    -webkit-animation-name: bounceIn;
+    animation-name: bounceIn;
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    .menu__list {
+      display: flex;
+      gap: 1.5rem;
+
+      .menu__list--item {
+        font-family: $font-family-secondary;
+        font-size: 1.2rem;
+
+        .menu__list--item-link {
+          color: $color-secondary;
+          display: flex;
+          flex-wrap: wrap; /* ver porque no se acomoda */
+          font-weight: bold;
+          /* efecto */
+          border-bottom: 2px solid $color-primary;
+          transition: all 0.5s ease;
+          // color: aliceblue;
+        }
+        .menu__list--item-link:hover {
+          border-color: rgb(148, 0, 246);
+        }
+      }
+    }
+  }
+  @-webkit-keyframes bounceIn {
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+      -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    0% {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+    20% {
+      -webkit-transform: scale3d(1.1, 1.1, 1.1);
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.9, 0.9, 0.9);
+      transform: scale3d(0.9, 0.9, 0.9);
+    }
+    60% {
+      opacity: 1;
+      -webkit-transform: scale3d(1.03, 1.03, 1.03);
+      transform: scale3d(1.03, 1.03, 1.03);
+    }
+    80% {
+      -webkit-transform: scale3d(0.97, 0.97, 0.97);
+      transform: scale3d(0.97, 0.97, 0.97);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  @keyframes bounceIn {
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+      -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    0% {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+    20% {
+      -webkit-transform: scale3d(1.1, 1.1, 1.1);
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.9, 0.9, 0.9);
+      transform: scale3d(0.9, 0.9, 0.9);
+    }
+    60% {
+      opacity: 1;
+      -webkit-transform: scale3d(1.03, 1.03, 1.03);
+      transform: scale3d(1.03, 1.03, 1.03);
+    }
+    80% {
+      -webkit-transform: scale3d(0.97, 0.97, 0.97);
+      transform: scale3d(0.97, 0.97, 0.97);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+}
+
+
