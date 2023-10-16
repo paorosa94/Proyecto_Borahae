@@ -26,7 +26,7 @@ main {
     bottom: 150px;
   }
 }
-.section__white{
+.section__white {
   background-color: $color-secondary;
 }
 video {
@@ -76,37 +76,36 @@ video {
     // margin-top: 100px;
     // margin-left: 5rem;
     // width: 25rem;
-    .consulta--md{
-
+    .consulta--md {
       font-size: 1.2rem;
       display: flex;
       align-self: center;
       margin-top: 100px;
       margin-left: 30px;
       width: 20rem;
-  }
-        }
-    /* Formulario */
-    form {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-
-      .form__input {
-        height: 35px;
-      }
-
-      .bottom {
-        background-color: pink;
-        border: none;
-        padding: 12px 24px;
-        font-size: 1rem;
-      }
-      .bottom:hover {
-        background-color: $color-purple;
-      }
     }
-    
+  }
+  /* Formulario */
+  form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .form__input {
+      height: 35px;
+    }
+
+    .bottom {
+      background-color: pink;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+    }
+    .bottom:hover {
+      background-color: $color-purple;
+    }
+  }
+
   /* ASIDE */
   aside {
     width: 68%;
@@ -116,12 +115,10 @@ video {
       height: 100%;
       object-fit: cover;
       display: flex;
-      margin-left: 12rem
-    
+      margin-left: 12rem;
     }
-  
-}
   }
+}
 
 .redes {
   align-items: center;
@@ -142,4 +139,44 @@ video {
       color: $color-secondary;
     }
   }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .header {
+    padding-right: 90px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* home */
+  main {
+    .main__items--text {
+      font-size: 2rem;
+      bottom: -150px;
+    }
+  }
+  .contacto {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    margin-top: 0px;
+
+    .contacto__block {
+      margin-top: 0px;
+    }
+    .consulta {
+      margin-left: 0px;
+      .consulta--md{
+        margin-top: 0px !important;
+        margin-left: 0px !important;
+      }
+  }
+  aside {
+    align-self: end;
+    width: 80%;
+
+    .aside__block {
+      margin-left: 0px !important;
+    }
+  }
+}
 }

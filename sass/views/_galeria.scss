@@ -13,11 +13,11 @@ main{
     object-fit: cover;
 }
 } 
-.font-size-background{
-  color: $color-secondary;
-  font-size: 2rem;
-  background-color: $color-primary
-}
+// .font-size-background{
+//   color: $color-secondary;
+//   font-size: 2rem;
+//   background-color: $color-primary
+// }
 .background-color{
   background-color: $color-secondary;
 }
@@ -32,3 +32,11 @@ main{
 //   bottom: 300px;
 //   left: 520px;
 // }
+
+@media only screen and (max-width: 768px) {
+  /* GALERIA */
+ 
+  .font-galeria-size{
+    font-size: 1.7rem;
+  }
+}
