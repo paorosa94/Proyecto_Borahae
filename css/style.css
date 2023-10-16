@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #grilla {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -254,6 +255,19 @@ header {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); } }
 
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center; }
+    header .header__logo--img {
+      margin-right: 75px; }
+  .menu {
+    flex-direction: column; }
+    .menu .menu__list {
+      flex-direction: column; }
+  .sticky {
+    position: relative; } }
+
 main .parallax {
   background-image: url("../imagenes/image (4).png");
   background-attachment: fixed;
@@ -364,6 +378,33 @@ video {
       gap: 0.5rem;
       color: white; }
 
+@media only screen and (max-width: 575.98px) {
+  .header {
+    padding-right: 90px; } }
+
+@media only screen and (max-width: 768px) {
+  /* home */
+  main .main__items--text {
+    font-size: 2rem;
+    bottom: -150px; }
+  .contacto {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    margin-top: 0px; }
+    .contacto .contacto__block {
+      margin-top: 0px; }
+    .contacto .consulta {
+      margin-left: 0px; }
+      .contacto .consulta .consulta--md {
+        margin-top: 0px !important;
+        margin-left: 0px !important; }
+    .contacto aside {
+      align-self: end;
+      width: 80%; }
+      .contacto aside .aside__block {
+        margin-left: 0px !important; } }
+
 /* banner */
 main .parallax-nosotros {
   background-image: url("../imagenes/Nosotros.jpg");
@@ -395,6 +436,18 @@ section .section__block {
     color: white;
     gap: 10px;
     font-size: 1rem; }
+
+@media only screen and (max-width: 768px) {
+  /* nosotros */
+  .flex-direction {
+    flex-direction: initial; }
+  .section-style {
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+    gap: 300px;
+    flex-direction: initial;
+    font-size: 1rem; } }
 
 /* banner */
 main .parallax-servicios {
@@ -436,57 +489,30 @@ main .main__items--size {
       .servicios article .article__servicios--clubhouse .article__servicios--clubhouse-color, .servicios article .article__servicios--gastronomia .article__servicios--clubhouse-color, .servicios article .article__servicios--produccion .article__servicios--clubhouse-color, .servicios article .article__servicios--gastronomia .article__servicios--gastronomia-color, .servicios article .article__servicios--produccion .article__servicios--produccion-color {
         color: white; }
 
-.slide-left {
-  -webkit-animation-name: slideInLeft;
-  animation-name: slideInLeft;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both; }
-
-@-webkit-keyframes slideInLeft {
-  0% {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-    visibility: visible; }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0); } }
-
-@keyframes slideInLeft {
-  0% {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-    visibility: visible; }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0); } }
-
-.slide-rigth {
-  -webkit-animation-name: slideInRight;
-  animation-name: slideInRight;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both; }
-
-@-webkit-keyframes slideInRight {
-  0% {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    visibility: visible; }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0); } }
-
-@keyframes slideInRight {
-  0% {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    visibility: visible; }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0); } }
+@media only screen and (max-width: 768px) {
+  main .main__items--size {
+    font-size: 2rem;
+    position: relative;
+    bottom: -150px; }
+  /* servicios */
+  .servicios {
+    transition: none; }
+    .servicios article {
+      flex-direction: column !important; }
+  .article__servicios--gastronomia-color {
+    text-align: center !important; }
+  [data-aos^=fade][data-aos^=fade].aos-animate {
+    opacity: 1;
+    transform: none;
+    /* Desactiva la transformación en dispositivos móviles */ }
+  [data-aos^=fade][data-aos^=fade] {
+    opacity: 1;
+    /* Modifica la opacidad para dispositivos móviles */
+    transition-property: none;
+    /* Desactiva la transición para dispositivos móviles */ }
+  [data-aos=fade-right] {
+    transform: none;
+    /* Desactiva la transformación en dispositivos móviles */ } }
 
 main .parallax-galeria {
   background-image: url("../imagenes/galeria11.jpg") !important;
@@ -500,51 +526,10 @@ main .parallax-galeria {
   border-bottom: 5px white ridge;
   object-fit: cover; }
 
-.font-size-background {
-  color: white;
-  font-size: 2rem;
-  background-color: #000000; }
-
 .background-color {
   background-color: white; }
 
-/* MOBILE */
 @media only screen and (max-width: 768px) {
-  header {
-    flex-direction: column; }
-  .sticky {
-    position: relative; }
-  .menu {
-    flex-direction: column; }
-  /* home */
-  .text-color-banner {
-    font-size: 2rem;
-    bottom: -150px; }
-  .div-one-section {
-    display: flex;
-    margin: 2rem 2rem;
-    gap: 1rem; }
-  .contacto {
-    flex-direction: column;
-    align-items: center; }
-  gap-margin-px {
-    gap: 0px;
-    margin: 0px; }
-  /* nosotros */
-  .flex-direction {
-    flex-direction: initial; }
-  .section-style {
-    display: flex;
-    justify-content: center;
-    padding: 4rem;
-    gap: 300px;
-    flex-direction: initial;
-    font-size: 1rem; }
-  /* servicios */
-  .flex-direction-m {
-    flex-direction: column-reverse; }
-  .div-flex-servicios h3, .div-flex-servicios p {
-    text-align: center !important; }
   /* GALERIA */
   .font-galeria-size {
     font-size: 1.7rem; } }

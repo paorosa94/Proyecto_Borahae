@@ -13,14 +13,6 @@ main {
     object-fit: cover;
   }
 }
-
-// .font-size{
-//     font-size: 3rem;
-//     background-color: #00000078;
-//     color: white;
-//     font-weight: bold;
-//     align-self: center;
-//   }
 section {
   .section__block {
     color: $color-primary;
@@ -45,4 +37,20 @@ form {
   gap: 10px;
   font-size: 1rem;
 }
+}
+@media only screen and (max-width: 768px) {
+
+  /* nosotros */
+  .flex-direction {
+    flex-direction: initial;
+  }
+  
+  .section-style {
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+    gap: 300px;
+    flex-direction: initial;
+    font-size: 1rem;
+  }
 }
