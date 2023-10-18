@@ -28,7 +28,7 @@ main {
   article {
     @include flex (initial, null, null, 20px);
     color: $color-secondary;
-    font-size: 1rem;
+    font-size: map-get($map-size, font-1);
 
     /* section*/
     .article__servicios--clubhouse {
@@ -62,7 +62,7 @@ main {
 @media only screen and (max-width: 768px) {
   main{
     .main__items--size{
-      font-size: 2rem;
+      font-size: map-get($map-size, font-2);
       position: relative;
       bottom: -150px;
     }
