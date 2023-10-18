@@ -10,8 +10,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     // background-color: black;
-    width: 100%;
-    height: 80vh;
+    @include sizes (100%, 80vh);
     border-bottom: 5px $color-purple ridge;
     object-fit: cover;
   }
@@ -30,7 +29,7 @@ main {
   background-color: $color-secondary;
 }
 video {
-  width: 50%;
+  @include sizes (50%, null);
 }
 .parallax-two {
   background-image: url("../imagenes/home3.jpg");
@@ -38,57 +37,43 @@ video {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  height: 80vh;
+  @include sizes (100%, 80vh);
   object-fit: cover;
 }
 .contacto {
-  display: flex;
+  @include flex (null, null, null, 50px);
   border-bottom: 3px dotted pink;
   color: $color-secondary;
   margin-top: 10px;
-  gap: 50px;
 
   .contacto__block {
-    flex-direction: column;
-    display: flex;
+    @include flex (column, null, center, 10px);
     padding-top: 35px;
-    gap: 10px;
-    align-items: center;
     margin-top: 100px;
 
     .contacto__block--mdf {
-      display: flex;
-      flex-direction: column;
+      @include flex (column, null, null, nul);
       // margin-left: 2rem;
     }
     .contacto__block--bd {
-      display: flex;
-      flex-direction: column;
-      align-items: baseline;
-      gap: 1rem;
+      @include flex (column, null, baseline, 1rem);
     }
   }
   .consulta {
-    display: flex;
-    flex-direction: column;
+    @include flex (column, null, null, null);
     margin-left: 3rem;
-    // margin-top: 100px;
-    // margin-left: 5rem;
-    // width: 25rem;
     .consulta--md {
       font-size: 1.2rem;
       display: flex;
       align-self: center;
       margin-top: 100px;
       margin-left: 30px;
-      width: 20rem;
+      @include sizes (20rem, null);
     }
   }
   /* Formulario */
   form {
-    display: flex;
-    flex-direction: column;
+    @include flex (column, null, null, null);
     flex-wrap: wrap;
 
     .form__input {
@@ -108,11 +93,10 @@ video {
 
   /* ASIDE */
   aside {
-    width: 68%;
+    @include sizes (68%, null);
     display: flex;
     .aside__block {
-      width: 70%;
-      height: 100%;
+      @include sizes (70%, 100%);
       object-fit: cover;
       display: flex;
       margin-left: 12rem;
@@ -172,7 +156,7 @@ video {
   }
   aside {
     align-self: end;
-    width: 80%;
+    @include sizes (80%, null);
 
     .aside__block {
       margin-left: 0px !important;
