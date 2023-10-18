@@ -36,7 +36,7 @@ header {
 
       .menu__list--item {
         font-family: $font-family-secondary;
-        font-size: 1.2rem;
+        font-size: map-get($map-size, font-1-2);
 
         .menu__list--item-link {
           color: $color-secondary;

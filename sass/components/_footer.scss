@@ -13,13 +13,13 @@ footer {
       @include sizes(100%, null);
         display: block;
         text-align: center;
-        font-size: 45px;
+        font-size: map-get($map-size, font-45px);
     }
   }
   
   .footer__block--md {
     color: $color-primary;
-    font-size: 15px;
+    font-size: map-get($map-size, font-15px);
     align-self: center;
     font-weight: bold;
     border-bottom: 2px solid $color-secondary;

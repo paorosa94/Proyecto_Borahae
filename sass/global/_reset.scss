@@ -13,13 +13,13 @@ html body {
   }
   
 h2 {
-  font-size: 1.5rem;
+  font-size: map-get($map-size, font-1-5);
 }
 h3 {
-  font-size: 1.5rem;
+  font-size: map-get($map-size, font-1-5);
 }
 h4 {
-  font-size: 1rem;
+  font-size: map-get($map-size, font-1);
 }
 h5 {
   font-size: 0.8rem;
@@ -34,7 +34,4 @@ ul {
 a {
   /* sacamos por defecto los estilos de link  */
   text-decoration: none;
-}
-.section-white {
-  background-color: #fff;
 }

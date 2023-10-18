@@ -17,7 +17,7 @@ main {
   .main__items--text {
     color: $color-secondary;
     position: absolute;
-    left: 15px;
+    left: map-get($map-size, font-15px);
     font-weight: bold;
     background-color: #00000078;
     padding: 10px;
@@ -63,7 +63,7 @@ video {
     @include flex (column, null, null, null);
     margin-left: 3rem;
     .consulta--md {
-      font-size: 1.2rem;
+      font-size: map-get($map-size, font-1-2);
       display: flex;
       align-self: center;
       margin-top: 100px;
@@ -84,7 +84,7 @@ video {
       background-color: pink;
       border: none;
       padding: 12px 24px;
-      font-size: 1rem;
+      font-size: map-get($map-size, font-1);
     }
     .bottom:hover {
       background-color: $color-purple;
@@ -118,7 +118,7 @@ video {
     .list-redes {
       display: flex;
       font-family: "Merriweather", serif;
-      font-size: 20px;
+      font-size: map-get($map-size, font-20px);
       gap: 0.5rem;
       color: $color-secondary;
     }
@@ -134,7 +134,7 @@ video {
   /* home */
   main {
     .main__items--text {
-      font-size: 2rem;
+      font-size: map-get($map-size, font-2);
       bottom: -150px;
     }
   }

@@ -107,9 +107,6 @@ a {
   /* sacamos por defecto los estilos de link  */
   text-decoration: none; }
 
-.section-white {
-  background-color: #fff; }
-
 footer {
   color: #000000;
   background-image: linear-gradient(180deg, #000000 0%, #ffffff 50%);
