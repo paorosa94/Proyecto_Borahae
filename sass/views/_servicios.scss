@@ -8,8 +8,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: $color-primary;
-    width: 100%;
-    height: 80vh;
+    @include sizes (100%, 80vh);
     border-bottom: 5px $color-purple ridge;
     object-fit: cover;
   }
@@ -22,24 +21,18 @@ main {
   }
 }
 .servicios {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+  @include flex(column, null, null, 40px);
   margin-bottom: 20px;
   margin-top: 50px;
 
   article {
-    display: flex;
-    flex-direction: initial;
+    @include flex (initial, null, null, 20px);
     color: $color-secondary;
-    gap: 20px;
     font-size: 1rem;
 
     /* section*/
     .article__servicios--clubhouse {
-      display: flex;
-      flex-direction: initial;
-      gap: 20px;
+      @include flex (initial, null, null, 20px);
 
       .article__servicios--clubhouse-color {
         color: $color-secondary;

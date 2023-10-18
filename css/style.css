@@ -144,10 +144,10 @@ footer {
 
 header {
   display: flex;
+  justify-content: space-between;
   /*alineando los elementos*/
   /* justify-content: center; alineacion horizontal mas centrado */
   flex-wrap: wrap;
-  justify-content: space-between;
   top: 0px;
   background-color: #000000;
   z-index: 1;
@@ -157,15 +157,14 @@ header {
     height: 100px; }
   header .menu {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     /* ver porque no se acomoda */
-    /* width: 500px; se aplica esto primero para que tenga un ancho y poder separarlos */
-    justify-content: space-around;
     /* separando los items*/
     margin-right: 6rem;
     padding: 0;
     margin-top: 0;
-    align-items: center;
     /* TRANSICION */
     -webkit-animation-name: bounceIn;
     animation-name: bounceIn;
@@ -307,22 +306,23 @@ video {
 
 .contacto {
   display: flex;
+  gap: 50px;
   border-bottom: 3px dotted pink;
   color: white;
   margin-top: 10px;
-  gap: 50px;
   /* Formulario */
   /* ASIDE */ }
   .contacto .contacto__block {
-    flex-direction: column;
     display: flex;
-    padding-top: 35px;
-    gap: 10px;
+    flex-direction: column;
     align-items: center;
+    gap: 10px;
+    padding-top: 35px;
     margin-top: 100px; }
     .contacto .contacto__block .contacto__block--mdf {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      gap: nul; }
     .contacto .contacto__block .contacto__block--bd {
       display: flex;
       flex-direction: column;
@@ -432,9 +432,9 @@ section .section__block {
   .section__details form {
     display: flex;
     flex-direction: column;
+    gap: 10px;
     flex-wrap: wrap;
     color: white;
-    gap: 10px;
     font-size: 1rem; }
 
 @media only screen and (max-width: 768px) {
@@ -443,10 +443,10 @@ section .section__block {
     flex-direction: initial; }
   .section-style {
     display: flex;
-    justify-content: center;
-    padding: 4rem;
-    gap: 300px;
     flex-direction: initial;
+    justify-content: center;
+    gap: 300px;
+    padding: 4rem;
     font-size: 1rem; } }
 
 /* banner */
@@ -478,8 +478,8 @@ main .main__items--size {
   .servicios article {
     display: flex;
     flex-direction: initial;
-    color: white;
     gap: 20px;
+    color: white;
     font-size: 1rem;
     /* section*/ }
     .servicios article .article__servicios--clubhouse, .servicios article .article__servicios--gastronomia, .servicios article .article__servicios--produccion {
